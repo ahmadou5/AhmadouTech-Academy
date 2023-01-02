@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { FaYoutubeSquare, FaInstagramSquare } from "react-icons/fa"
 
 export const Hero = () => {
@@ -20,11 +21,11 @@ export const Hero = () => {
                   development experience and land the coding
                   career of your dreams
                 </p>
-                <a href="/" >
+                <Link href="/" >
                     <div className='flex flex-row justify-center items-center py-3 px-6 rounded-full cursor-pointer bg-[#2190ff] min-h-[48px]'>
                        <button type="button" className="font-poppins font-semibold text-[14px] leading-[16px] text-white">Explore Courses</button>
                     </div>
-                </a>
+                </Link>
                 <div className="flex justify-start items-center xs:flex-row flex-col w-full mt-14">
                     <div className="xs:mr-5 mr-0 xs:mb-0 mb-10">
                         <div className="flex justify-start items-start flex-row">
