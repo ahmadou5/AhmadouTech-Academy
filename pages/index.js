@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import { Navbar } from '../src/Navbar/Navbar'
+import { Navbar } from '../src/components/Navbar/Navbar'
+import { Hero } from '../src/components/Hero/Hero'
 import styles from '../styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,9 +16,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=''>
+      <main class='dark'>
         <Navbar />
-        <h1 className='text-red-600 dark:text-white dark:bg-black text-center'>hello world</h1>
+        <Hero />
+        <Hero />
+        <Hero />
+        <Hero />
+        <Hero />
+        <h1 className='text-color-black dark:text-white dark:bg-black text-center'>hello world</h1>
       </main>
     </>
   )
