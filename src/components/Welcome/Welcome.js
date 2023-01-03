@@ -15,7 +15,7 @@ export const Welcome = () => {
                     meaningful projects that will set the tone for your career.
                 </p>
             </div>
-            <div class="flex justify-center items-center 3xl:w-[80%] lg:w-[899px] w-full rounded-[20px] mt-12 overflow-hidden" style={{opacity: 1}}>
+            <div class="flex justify-center items-center 3xl:w-[80%] lg:w-[899px] w-full rounded-[20px] mt-12 overflow-hidden" >
                 <video controls preload="none" poster="https://i.ibb.co/YkNcJZR/homepage-thumbnail-1.png" class="w-full">
                     <source src="https://player.vimeo.com/progressive_redirect/playback/715127251/ren…signature=dbbc617…"></source>
                 </video>

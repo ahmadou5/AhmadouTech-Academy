@@ -3,7 +3,7 @@ export const Courses = () => {
     <div className="flex justify-center items-center sm:p-16 xs:p-8 px-6 py-12 dark:bg-slate-900 bg-slate-100">
         <div class="flex justify-center items-center 3xl:max-w-[1280px] w-full flex-col">
             <span class="hash-span" id="explorecourses">&nbsp;</span>
-            <div class="flex flex-col items-center" style={{opacity: 1} , {transform: 'none'}}>
+            <div class="flex flex-col items-center" >
                <h2 class="font-poppins dark:text-white text-pro-w-black font-bold sm:text-[48px] sm:leading-[52px] text-[30px] leading-[36px] xs:tracking-[-0.5%] tracking-[-0.25%] text-center">
                    Comprehensive 
                    <span class="text-[#2190ff]"> Project-Based</span>
@@ -20,7 +20,7 @@ export const Courses = () => {
                </p>
             </div>
             <div class="w-full flex justify-center items-center flex-wrap mt-10">
-                <div class="course_card relative sm:w-[470px] w-full flex rounded-[20px] dark:bg-pro-black-2 bg-white flex-col xs:m-7 my-5 mx-0 cursor-pointer shadow-md hover:shadow-xl dark:shadow-inherit shadow-pro-w-shadow overflow-hidden" style={{opacity: 1}, {transform: 'none'}}>
+                <div class="course_card relative sm:w-[470px] w-full flex rounded-[20px] dark:bg-pro-black-2 bg-white flex-col xs:m-7 my-5 mx-0 cursor-pointer shadow-md hover:shadow-xl dark:shadow-inherit shadow-pro-w-shadow overflow-hidden" >
                    <div class="relative max-h-[328px] w-full overflow-hidden rounded-tl-[20px] rounded-tr-[20px] object-cover">
                          
                    </div>
