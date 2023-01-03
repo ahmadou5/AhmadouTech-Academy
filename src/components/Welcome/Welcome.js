@@ -10,12 +10,12 @@ export const Welcome = () => {
                 </h1>
                 <p class="font-poppins xs:text-[20px] xs:leading-[27px] text-[16px] leading-[23px] font-normal xl:w-[65%] sm:w-[75%] w-[100%] text-center dark:text-[#A3B3BC] text-[#5B6478] mt-4">
                     Hands-on projects are the most practical way to learn a programming language
-                    and build your portfolio. If you're tired of building "to-do" apps and learning theory,
+                    and build your portfolio. If you're tired of building to-do apps and learning theory,
                     JS Mastery Pro can help you solidify your knowledge and start taking on 
                     meaningful projects that will set the tone for your career.
                 </p>
             </div>
-            <div class="flex justify-center items-center 3xl:w-[80%] lg:w-[899px] w-full rounded-[20px] mt-12 overflow-hidden" >
+            <div class="flex justify-center items-center 3xl:w-[80%] lg:w-[899px] w-full rounded-[20px] mt-12 overflow-hidden" style={{opacity: 1}}>
                 <video controls preload="none" poster="https://i.ibb.co/YkNcJZR/homepage-thumbnail-1.png" class="w-full">
                     <source src="https://player.vimeo.com/progressive_redirect/playback/715127251/ren…signature=dbbc617…"></source>
                 </video>
