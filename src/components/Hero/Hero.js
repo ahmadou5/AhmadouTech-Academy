@@ -1,4 +1,6 @@
+import Image from "next/image"
 import Link from "next/link"
+import {Logo} from '../../assets/logdark.png'
 import { FaYoutubeSquare, FaInstagramSquare } from "react-icons/fa"
 
 export const Hero = () => {
@@ -8,7 +10,7 @@ export const Hero = () => {
         <div className="flex justify-center items-center 3xl:max-w-[1280px] w-full pt-[98px] lg:flex-row flex-col">
             <div className="flex-1 flex flex-col justify-center items-start" style={{opacity: 1}}>
                 <h1 className="font-poppins dark:text-white text-pro-w-black font-bold md:text-[64px] md:leading-[70px] text-[40px] leading-[46px] tracking-[-0.5%] text-left">
-                    Launch Your Dev 
+                    Start Your Dev 
                     <br className="sm:block hidden"></br>
                     Career With 
                     <br className="sm:block hidden"></br>
@@ -44,7 +46,9 @@ export const Hero = () => {
             </div>
             <div className=" flex-1 w-full flex lg:justify-center justify-end items-center lg:ml-10 ml-0 lg:mt-0 mt-10">
                 <div className="relative lg:w-full h-full w-[90%] object-cover">
-                    nam zamu tashi
+                    <span className="w-[100%] h-[100%] bg-transparent">
+                        <Image src={Logo} alt='gwaji' />
+                    </span>
                 </div>
             </div>
         </div>

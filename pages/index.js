@@ -4,8 +4,12 @@ import { Inter } from '@next/font/google'
 import { Navbar } from '../src/components/Navbar/Navbar'
 import { Hero } from '../src/components/Hero/Hero'
 import styles from '../styles/Home.module.css'
+import { Welcome } from '../src/components/Welcome/Welcome'
+import { Courses } from '../src/components/Course/Courses'
+
 
 const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
   return (
@@ -19,11 +23,14 @@ export default function Home() {
       <main class='dark'>
         <Navbar />
         <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
-        <h1 className='text-color-black dark:text-white dark:bg-black text-center'>hello world</h1>
+        <Welcome />
+        <Courses />
+        
+        <div className='relative bg-slate-100 dark:bg-slate-900 w-full h-60 ml-auto mr-auto  text-center'>
+            <h1 className='rounded-lg shadow-2xl py-16 text-2xl text w-[80%]  text-[#2190ff] ml-auto mr-auto h-[80%]'>
+               Sorry!!! For inconvienience As We Are Under Development Come Back Later SEE YU SOON
+            </h1>
+        </div>
       </main>
     </>
   )
