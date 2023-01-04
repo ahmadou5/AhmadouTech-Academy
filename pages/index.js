@@ -30,7 +30,7 @@ export default function Home() {
         <Courses />
         
         <div className='relative bg-slate-100 dark:bg-slate-900 w-full h-60 ml-auto mr-auto  text-center'>
-            <div className='flex flex-row justify-center items-center w-[20%] ml-auto mr-auto  py-3 px-16 rounded-full cursor-pointer bg-[#4079b3] dark:bg-slate-300 min-h-[48px]'>
+            <div className='flex flex-row justify-center items-center w-[20%] ml-auto mr-auto  py-3 px-16 rounded-full cursor-pointer text-[#2190ff] dark:bg-slate-300 min-h-[48px]'>
                <button onClick={() => setIsLit(!isLit)} type="button" className="font-poppins font-semibold text-[14px] leading-[16px] text-white">Switch Theme</button>
             </div>
             <h1 className='rounded-lg shadow-2xl py-16 text-2xl text w-[80%]  text-[#2190ff] ml-auto mr-auto h-[80%]'>
