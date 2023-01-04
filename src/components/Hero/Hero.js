@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import {Logo} from '../../assets/logdark.png'
 import { FaYoutubeSquare, FaInstagramSquare } from "react-icons/fa"
 
 export const Hero = () => {
@@ -46,8 +45,9 @@ export const Hero = () => {
             </div>
             <div className=" flex-1 w-full flex lg:justify-center justify-end items-center lg:ml-10 ml-0 lg:mt-0 mt-10">
                 <div className="relative lg:w-full h-full w-[90%] object-cover">
-                    <span className="w-[100%] h-[100%] bg-transparent">
-                        <Image src={Logo} alt='gwaji' />
+                    <span style={{'box-sizing':'border-box'},{'display':'block'},{'overflow':'hidden'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0}}>
+                        <span style={{'box-sizing':'border-box'},{'display':'block'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0},{'padding-top':'100.81566068515497%'}}></span>
+                        <img alt="hero_bg" sizes="100vw" src='/herobg.png' decoding="async" data-nimg="responsive" style={{'position':'absolute'},{'top':0},{'left':0},{'bottom':0},{'right':0},{'box-sizing':'border-box'},{'padding':0},{'border':'none'},{'margin':'auto'},{'display':'block'},{'width':0},{'height':0},{'min-width':'100%'},{'max-width':'100%'},{'min-height':'100%'},{'max-height':'100%'}}/>
                     </span>
                 </div>
             </div>
