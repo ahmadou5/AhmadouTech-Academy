@@ -15,7 +15,7 @@ export const Navbar = () => {
     const [isCard2, setIscard2] = useState(false);
     
     return(
-    <div className="fixed w-full z-[5]  sm:px-14 px-6 py-4 flex justify-center items-center shadow-none drop-shadow-sm dark:bg-slate-900 bg-slate-100 transition ease-in">
+    <div className="fixed w-full z-[5]  sm:px-16 px-6 py-4 flex justify-center items-center shadow-none drop-shadow-sm dark:bg-slate-900 bg-slate-100 transition ease-in">
        <div className="flex  items-end 3xl:max-w-[1280px] w-full flex-row justify-between">
         <div className="relative md:w-[80px] md:h-[52px] w-[65px] h-[50px] dark:flex cursor-pointer py-1 mb-1 md:mb-0">
           <Image src={Logo} alt='ttt' classNamSe='w-[100%]  h-[100%]' />

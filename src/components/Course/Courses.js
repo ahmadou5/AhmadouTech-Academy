@@ -19,7 +19,7 @@ export const Courses = () => {
                     Cryptoket, a fully-functioning NFT platform.
                </p>
             </div>
-            <div class="w-full flex justify-center items-center flex-wrap mt-10">
+            <div class="w-full flex justify-center items-center flex-wrap mt-10 ">
                <div class="course_card relative sm:w-[470px] w-full flex rounded-[20px] dark:bg-pro-black-2 bg-white flex-col xs:m-7 my-5 mx-0 cursor-pointer shadow-md hover:shadow-xl dark:shadow-inherit shadow-pro-w-shadow overflow-hidden" style={{'opacity': 1},{'transform':'none'}}>
                 <div class="relative max-h-[328px] w-full overflow-hidden rounded-tl-[20px] rounded-tr-[20px] object-cover">
                     <span style={{'box-sizing':'border-box'},{'display':'inline-block'},{'overflow':'hidden'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0},{'position':'relative'},{'max-width':'100%'}}>
