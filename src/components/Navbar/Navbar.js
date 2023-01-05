@@ -5,11 +5,16 @@ import { FaBars } from 'react-icons/fa'
 import Logo from '../../assets/logdark.png'
 import { Card1 } from '../Cards/Card1'
 import { Card2 } from '../Cards/Card2'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { ThemeContext } from '../../../pages'
+
+
 
 
 
 export const Navbar = () => {
+
+   const {setIsLit,isLit} = useContext(ThemeContext)
 
     const [isCard1, setIscard1] = useState(false);
     const [isCard2, setIscard2] = useState(false);
@@ -18,19 +23,30 @@ export const Navbar = () => {
     <div className="fixed w-full z-[5]  sm:px-16 px-6 py-4 flex justify-center items-center shadow-none drop-shadow-sm dark:bg-slate-900 bg-slate-100 transition ease-in">
        <div className="flex  items-end 3xl:max-w-[1280px] w-full flex-row justify-between">
         <div className="relative md:w-[80px] md:h-[52px] w-[65px] h-[50px] dark:flex cursor-pointer py-1 mb-1 md:mb-0">
-          <Image src={Logo} alt='ttt' classNamSe='w-[100%]  h-[100%]' />
+          <Image src={Logo} alt='ttt' className='w-[100%]  h-[100%]' />
         </div>
-        <div className='md:flex hidden flex-1 justify-end items-center py-4'>
-            <div class="flex mr-8">
-              <input type="checkbox" class="checkbox" id="checkbox">
-                
-              </input>
-              <label for="checkbox" class="flex justify-between items-center min-w-[32px] h-4 bg-pro-black-2 rounded-2xl p-1 relative label">
-               
+        <div className='md:flex hidden flex-1 justify-end  items-center py-4'>
+            <div class="flex mr-8 ">
+              <label onClick={() => setIsLit(!isLit)} for="checkbox" className=" shadow-md hover:shadow-xl  dark:shadow-inherit flex justify-between items-center min-w-[20px] h-5 w-5 bg-slate-200 dark:bg-slate-700 rounded-2xl p-1 relative label">
+               { isLit ? 
+                <span style={{'box-sizing':'border-box'},{'display':'inline-block'},{'overflow':'hidden'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0},{'position':'relative'},{'max-width':'100%'}}>
+                  <span style={{'box-sizing':'border-box'},{'display':'block'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0},{'max-width':'100%'}}>
+                    <img style={{'display':'block'},{'max-width':'100%'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0}} alt='ddd'  src="/download.svg"/>
+                  </span>
+                  <img alt="moon" src="/suni.png" decoding="async" data-nimg="intrinsic" style={{'position':'absolute'},{'top':0},{'left':0},{'bottom':0},{'right':0},{'box-sizing':'border-box'},{'padding':0},{'border':'none'},{'margin':0},{'display':'block'},{'width':0},{'height':0},{'min-width':'100%'},{'max-width':'100%'},{'min-height':'100%'},{'max-height':'100%'},{'object-fit':'contain'}} />
+                </span>
+                :
+                <span style={{'box-sizing':'border-box'},{'display':'inline-block'},{'overflow':'hidden'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0},{'position':'relative'},{'max-width':'100%'}}>
+                  <span style={{'box-sizing':'border-box'},{'display':'block'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0},{'max-width':'100%'}}>
+                    <img style={{'display':'block'},{'max-width':'100%'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0}} alt='ddd'  src="/download.svg"/>
+                  </span>
+                  <img alt="sun" src="/sun.png" decoding="async" data-nimg="intrinsic" style={{'position':'absolute'},{'top':0},{'left':0},{'bottom':0},{'right':0},{'box-sizing':'border-box'},{'padding':0},{'border':'none'},{'margin':0},{'display':'block'},{'width':0},{'height':0},{'min-width':'100%'},{'max-width':'100%'},{'min-height':'100%'},{'max-height':'100%'},{'object-fit':'contain'}} />
+                </span> 
+               }
               </label>
             </div>
             <div className="relative flex justify-center items-center flex-row  mr-10">
-              <p class="font-poppins font-normal dark:text-[#969BA5] text-pro-w-black dark:hover:text-white hover:text-[#969BA5] text-[16px] leading-[22px] cursor-pointer">Courses</p>
+              <p className="font-poppins font-normal dark:text-[#969BA5] text-pro-w-black dark:hover:text-white hover:text-[#969BA5] text-[16px] leading-[22px] cursor-pointer">Courses</p>
               {
                 isCard2 ?  
                 <FiChevronUp onClick={() => {setIscard2(false)}}  className='ml-3 dark:text-[#969BA5] dark:hover:text-white hover:text-[#969BA5] text-[16px] leading-[22px] cursor-pointer' />

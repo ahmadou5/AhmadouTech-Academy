@@ -16,6 +16,14 @@ export const Welcome = () => {
                 </p>
             </div>
             <div class="flex justify-center items-center 3xl:w-[80%] lg:w-[899px] w-full rounded-[20px] mt-12 overflow-hidden" style={{opacity: 1}}>
+                <div class="sm:flex hidden justify-center items-center absolute z-[1]">
+                    <div class="flex justify-center items-center w-16 h-16 rounded-full shadow-lg cursor-pointer bg-white">
+                        <span style={{'box-sizing':'border-box'},{'display':'inline-block'},{'overflow':'hidden'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0},{'position':'relative'},{'max-width':'100%'}}>
+                            <span style={{'box-sizing':'border-box'},{'display':'block'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0},{'max-width':'100%'}}></span>
+                            <img src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fplay02.703b5d48.png&w=48&q=75" decoding="async" data-nimg="intrinsic" style={{'position':'absolute'},{'top':0},{'left':0},{'bottom':0},{'right':0},{'box-sizing':'border-box'},{'padding':0},{'border':'none'},{'margin':'auto'},{'display':'block'},{'width':0},{'height':0},{'min-width':'100%'},{'max-width':'100%'},{'min-height':'100%'},{'max-height':'100%'},{'object-fit':'contain'}} />
+                        </span>
+                    </div>
+                </div>
                 <video controls preload="none" poster="https://i.ibb.co/YkNcJZR/homepage-thumbnail-1.png" class="w-full">
                     <source src="https://player.vimeo.com/progressive_redirect/playback/715127251/ren…signature=dbbc617…"></source>
                 </video>

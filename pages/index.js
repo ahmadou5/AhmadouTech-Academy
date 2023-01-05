@@ -6,10 +6,13 @@ import { Hero } from '../src/components/Hero/Hero'
 import styles from '../styles/Home.module.css'
 import { Welcome } from '../src/components/Welcome/Welcome'
 import { Courses } from '../src/components/Course/Courses'
-import { useState } from 'react'
+import { useState, createContext } from 'react'
 
 
 const inter = Inter({ subsets: ['latin'] })
+
+
+export const ThemeContext = createContext();
 
 
 export default function Home() {
@@ -22,22 +25,24 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <ThemeContext.Provider value={{isLit, setIsLit}}>
+        <main className={isLit ? 'light' : 'dark'} >
+          <Navbar />
+          <Hero />
+          <Welcome />
+          <Courses />
+          
+          <div className='relative bg-slate-100 dark:bg-slate-900 w-full h-60 ml-auto mr-auto  text-center'>
+              <div className='flex flex-row justify-center items-center w-[20%] ml-auto mr-auto  py-3 px-16 rounded-full cursor-pointer text-[#2190ff] dark:bg-slate-300 min-h-[48px]'>
+                 <button onClick={() => setIsLit(!isLit)} type="button" className="font-poppins font-semibold text-[14px] leading-[16px] text-white">Toggle Theme</button>
+              </div>
+             <h1 className='rounded-lg shadow-2xl py-16 text-2xl text w-[80%]  text-[#2190ff] ml-auto mr-auto h-[80%]'>
+                 Sorry!!! For inconvienience As We Are Under Development Come Back Later SEE YU SOON
+              </h1>
+          </div>
+        </main>
+      </ThemeContext.Provider>
       
-      <main className={isLit ? 'light' : 'dark'} >
-        <Navbar />
-        <Hero />
-        <Welcome />
-        <Courses />
-        
-        <div className='relative bg-slate-100 dark:bg-slate-900 w-full h-60 ml-auto mr-auto  text-center'>
-            <div className='flex flex-row justify-center items-center w-[20%] ml-auto mr-auto  py-3 px-16 rounded-full cursor-pointer text-[#2190ff] dark:bg-slate-300 min-h-[48px]'>
-               <button onClick={() => setIsLit(!isLit)} type="button" className="font-poppins font-semibold text-[14px] leading-[16px] text-white">Switch Theme</button>
-            </div>
-            <h1 className='rounded-lg shadow-2xl py-16 text-2xl text w-[80%]  text-[#2190ff] ml-auto mr-auto h-[80%]'>
-               Sorry!!! For inconvienience As We Are Under Development Come Back Later SEE YU SOON
-            </h1>
-        </div>
-      </main>
     </>
   )
 }
