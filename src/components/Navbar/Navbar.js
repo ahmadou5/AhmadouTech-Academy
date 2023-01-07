@@ -71,6 +71,23 @@ export const Navbar = () => {
             </div>
         </div>
         <div class="md:hidden flex justify-center items-center py-4 relative">
+          <label onClick={() => setIsLit(!isLit)} for="checkbox" className=" shadow-md hover:shadow-xl  dark:shadow-inherit flex justify-between items-center min-w-[20px] h-5 w-5 bg-slate-200 dark:bg-slate-700 rounded-2xl p-1 relative label">
+               { isLit ? 
+                <span style={{'box-sizing':'border-box'},{'display':'inline-block'},{'overflow':'hidden'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0},{'position':'relative'},{'max-width':'100%'}}>
+                  <span style={{'box-sizing':'border-box'},{'display':'block'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0},{'max-width':'100%'}}>
+                    <img style={{'display':'block'},{'max-width':'100%'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0}} alt='ddd'  src="/download.svg"/>
+                  </span>
+                  <img alt="moon" src="/suni.png" decoding="async" data-nimg="intrinsic" style={{'position':'absolute'},{'top':0},{'left':0},{'bottom':0},{'right':0},{'box-sizing':'border-box'},{'padding':0},{'border':'none'},{'margin':0},{'display':'block'},{'width':0},{'height':0},{'min-width':'100%'},{'max-width':'100%'},{'min-height':'100%'},{'max-height':'100%'},{'object-fit':'contain'}} />
+                </span>
+                :
+                <span style={{'box-sizing':'border-box'},{'display':'inline-block'},{'overflow':'hidden'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0},{'position':'relative'},{'max-width':'100%'}}>
+                  <span style={{'box-sizing':'border-box'},{'display':'block'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0},{'max-width':'100%'}}>
+                    <img style={{'display':'block'},{'max-width':'100%'},{'width':'initial'},{'height':'initial'},{'background':'none'},{'opacity':1},{'border':0},{'margin':0},{'padding':0}} alt='ddd'  src="/download.svg"/>
+                  </span>
+                  <img alt="sun" src="/sun.png" decoding="async" data-nimg="intrinsic" style={{'position':'absolute'},{'top':0},{'left':0},{'bottom':0},{'right':0},{'box-sizing':'border-box'},{'padding':0},{'border':'none'},{'margin':0},{'display':'block'},{'width':0},{'height':0},{'min-width':'100%'},{'max-width':'100%'},{'min-height':'100%'},{'max-height':'100%'},{'object-fit':'contain'}} />
+                </span> 
+               }
+          </label>
           <div className='relative mt-2 w-9 dark:invert '>
             <FaBars className='w-[90%] h-[90%]' /> 
           </div>
