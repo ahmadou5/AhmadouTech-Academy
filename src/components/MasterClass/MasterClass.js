@@ -17,7 +17,7 @@ export const MasterClass = () => {
                        <br/> Experience</span>
                     </h2>
                     <p className="sm:w-[80%] w-[100%] text-center dark:text-[#A3B3BC] text-[#5B6478] mt-10 font-poppins xs:text-[20px] xs:leading-[27px] text-[16px] leading-[23px] font-normal">
-                        Showcase your expertise to employers with exciting projects where you'll build real-world applications and have your code reviewed by industry experts.
+                        Showcase your expertise to employers with exciting projects where you will build real-world applications and have your code reviewed by industry experts.
                     </p>
                     <p className="sm:w-[80%] w-[100%] text-center dark:text-[#A3B3BC] text-[#5B6478] mt-6 font-poppins xs:text-[20px] xs:leading-[27px] text-[16px] leading-[23px] font-normal">
                       Learn how to position yourself for a rewarding career with weekly live Q&As, mock interviews, LinkedIn and resume/CV guidance, and more.
