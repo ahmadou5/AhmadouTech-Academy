@@ -21,7 +21,7 @@ export const Courses = () => {
                     Cryptoket, a fully-functioning NFT platform.
                </p>
             </div>
-            <div class="w-full flex justify-center items-center flex-wrap mr-auto ml-auto mt-10 ">
+            <div class="w-full flex justify-center items-center flex-wrap  mt-10 ">
                <CourseCard />
                <CourseCard />
                <CourseCard />

@@ -71,7 +71,6 @@ export const Navbar = () => {
             </div>
         </div>
         <div class="md:hidden flex justify-center items-center py-4 relative">
-
           <div className='relative mt-2 w-9 dark:invert '>
             
             <FaBars className='w-[90%] h-[90%]' /> 
