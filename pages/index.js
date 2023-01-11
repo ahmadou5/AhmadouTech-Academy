@@ -7,6 +7,8 @@ import styles from '../styles/Home.module.css'
 import { Welcome } from '../src/components/Welcome/Welcome'
 import { Courses } from '../src/components/Course/Courses'
 import { useState, createContext } from 'react'
+import { MasterClass } from '../src/components/MasterClass/MasterClass'
+import { Gain } from '../src/components/Gain/Gain'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -31,6 +33,8 @@ export default function Home() {
           <Hero />
           <Welcome />
           <Courses />
+          <MasterClass />
+          <Gain />
           
           <div className='relative bg-slate-100 dark:bg-slate-900 w-full h-60 ml-auto mr-auto  text-center'>
               <div className='flex flex-row justify-center items-center w-[20%] ml-auto mr-auto  py-3 px-16 rounded-full cursor-pointer text-[#2190ff] dark:bg-slate-300 min-h-[48px]'>
